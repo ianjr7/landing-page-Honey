@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/*-----------------------container 1-----------------------------*/
+
+.container1{
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+.container1 .left h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.container1 .right ul{
+    display: flex;
+}
+.container1 .right ul li{
+    list-style: none;
+    margin: 0 3px;
+}
+.container1 .right ul li a{
+   
+    font-size: 30px;
+}
+.con1icon1{
+    color: rgb(93, 93, 193);
+}
+.con1icon2{
+    color: rgb(17, 191, 225);
+}
+.con1icon3{
+    color: rgb(189, 189, 189);
+}
+.con1icon4{
+    color: rgb(255, 0, 43);
+}
+
+/*-----------------------container 2-----------------------------*/
+
+
+.container2{
+    background-color: rgb(255, 255, 255) ;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.container2 .left,
+.container2 .right{
+    max-width: 520px;
+    min-height: 200px;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.container2 .left h2{
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(48, 47, 47);
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.container2 .left p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container2 .left button{
+    padding: 10px 100px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: rgb(79, 79, 79);
+    border: none;
+    border-radius: 5px;
+}
+.container2 .left button:hover{
+    background-color: rgb(55, 55, 55);
+}
+.container2 .right{
+    background-color: rgb(114, 114, 114);
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.container2 .right video{
+    width: 300px;
+    height: 300px;
+}
+
+/*-------------------container 3 slider image-------------------------*/
+
+.container3{
+    background-color: rgb(255, 255, 255);
+}
+
+.slider {
+    height: 350px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+.slide-track{
+    display: flex;
+    width: calc(250px * 16);
+    animation: scroll 40s linear infinite;
+}
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(calc(-250px * 8));
+    }
+}
+
+
+
+
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+
+}
+.slide img{
+    width: 100%;
+    transition: transform 1s;
+}
+.slide img:hover{
+    transform: translateZ(20px);
+}
+
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 5%;
+    z-index: 2;
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+/*-----------------------container 4-----------------------------*/
+
+.container4{
+    padding: 20px 50px;
+    background-color: white;
+}
+.container4 .content{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.container4 .content .box{
+    background-color: rgb(214, 214, 214);
+    margin: 5px;
+    height: 200px;
+}
+.container4 .content .box h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 200;
+    padding: 0px 20px;
+    margin-top: 140px;
+    text-shadow: 2px 2px black;
+    
+}
+.container4 .content .box1{
+    background: url(image/back1.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.container4 .content .box2{
+    background: url(image/back2.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.container4 .content .box3{
+    background: url(image/back3.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.container4 .content .box4{
+    background: url(image/back4.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.container4 .content .box5{
+    background: url(image/back5.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.container4 .content .box6{
+    background: url(image/back6.jpeg);
+    background-position: center;
+    background-size: 100%;
+}
+
+
+/*-----------------------container 5----------------------------------*/
+
+.container5{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 45px;
+    margin-bottom: 30px;
+    
+}
+.container5 .con5info{
+    background-color: rgb(179, 179, 179);
+    height: 200px;
+    margin: 0 10px;
+    overflow: hidden;
+    display: flex;
+    padding: 10px 10px;
+    
+    
+}
+.container5 .con5info .left{
+    align-items: center;
+}
+.container5 .con5info .right{
+    width: 90%;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.container5 .con5info .right .author{
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+.container5 .con5info img{
+    width: 180px;
+}
+
+
+/*-----------------------container 6----------------------------------*/
+
+.container6{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    align-items: center;
+    background-color: rgb(191, 191, 191);
+    
+}
+.container6 p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.container6 input{
+    padding: 10px 10px;
+    width: 370px;
+    border-radius: 2px;
+    border: 1px solid white;
+    outline: none;
+    
+}
+.container6 button{
+    padding: 10px 30px;
+    border-radius: 2px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.container6 button:hover{
+    background-color: rgb(46, 46, 46);
+}
+
+/*-----------------------container 7----------------------------------*/
+
+.container7{
+    background-color: rgb(48, 48, 48);
+    padding: 10px 50px;
+    text-align: center;
+}
+.container7 p{
+    color: white;
+    margin: auto;
+}
